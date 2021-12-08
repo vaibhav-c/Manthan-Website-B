@@ -1,0 +1,21 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Website A</title>
+	</head>
+	<body>
+		<h1>WEBISTE A</h1>  
+		<iframe id="iframe" src="http://127.0.0.1:1000" height="0" width="0" hidden = true>
+		</iframe>
+	</body>
+</html>
+
+<script>
+	window.addEventListener('message', function(event) {
+    document.cookie = event.data;
+		console.log(event);
+	}, false);
+</script>
